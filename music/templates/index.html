@@ -1,19 +1,53 @@
-{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <title>Web dictaphone</title>
+    <link href="styles/app.css" rel="stylesheet" type="text/css">
+    <link href="styles/install-button.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <button id="record">START</button>
-    <button id="stop">STOP</button>
 
-    <div class="sound-clips">
+    <div class="wrapper">
+
+      <header>
+        <h1>Web dictaphone</h1>
+      </header>
+
+      <section class="main-controls">
+        <canvas class="visualizer" height="60px"></canvas>
+        <div id="buttons">
+          <button class="record">Record</button>
+          <button class="stop">Stop</button>
+        </div>
+      </section>
+
+      <section class="sound-clips">
+
+
+      </section>
 
     </div>
+
+    <label for="toggle">❔</label>
+    <input type="checkbox" id="toggle">
+    <aside>
+      <h2>Information</h2>
+
+      <p>Web dictaphone is built using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator.getUserMedia">getUserMedia</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder_API">MediaRecorder API</a>, which provides an easier way to capture Media streams.</p>
+
+      <p>Icon courtesy of <a href="http://findicons.com/search/microphone">Find Icons</a>. Thanks to <a href="http://soledadpenades.com/">Sole</a> for the Oscilloscope code!</p>
+
+      <button id="install-btn">Install app</button>
+    </aside>
+
+    <script src="scripts/install.js"></script>
+
+    <script src="scripts/mediaDevices-getUserMedia-polyfill.js"></script>
+
+    <!-- Below is your custom application script -->
+    <script src="scripts/app.js"></script>
+
   </body>
-  {% block scripts %}
-  <script src="{% static 'js/index.js'%}" charset="utf-8"></script>
-  <script src="{% static 'js/mediaDevices-getUserMedia-polyfill.js'%}" charset="utf-8"></script>{% endblock %}
 </html>
