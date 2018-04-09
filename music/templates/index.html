@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button id="record">START</button>
+    <button id="stop">STOP</button>
+
+    <div class="sound-clips">
+
+    </div>
+  </body>
+  {% block scripts %}
+  <script src="{% static 'js/index.js'%}" charset="utf-8"></script>
+  <script src="{% static 'js/mediaDevices-getUserMedia-polyfill.js'%}" charset="utf-8"></script>{% endblock %}
+</html>
