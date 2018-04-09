@@ -1,11 +1,13 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Web dictaphone</title>
-    <link href="styles/app.css" rel="stylesheet" type="text/css">
-    <link href="styles/install-button.css" rel="stylesheet" type="text/css">
+    {% block styles %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">{% endblock%}
   </head>
   <body>
 
@@ -50,4 +52,8 @@
     <script src="scripts/app.js"></script>
 
   </body>
+  {% block scripts %}
+  <script src="{% static 'js/app.js'%}" charset="utf-8"></script>
+  <script src="{% static 'js/mediaDevices-getUserMedia-polyfill.js'%}" charset="utf-8"></script>
+  <script src="{% static 'js/respond.js'%}" charset="utf-8"></script>{% endblock %}
 </html>
