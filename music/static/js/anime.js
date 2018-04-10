@@ -23,7 +23,7 @@ anime.timeline({loop: true})
 // To display record animation
 $(document).ready(function(){
     $(".record").click(function(){
-        $(".spinner").show();
+        $(".spinner").fadeIn(1000);
     });
     $(".stop").click(function(){
         $(".spinner").hide();
