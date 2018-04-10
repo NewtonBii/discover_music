@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
 * {
   margin: 0;
   padding: 0;
@@ -19,23 +20,27 @@ body {
   flex-direction: column;
 }
 
+header {
+  background-color: #D35400;
+  padding: 2.0rem;
+  font-family: 'Gugi', cursive;
+}
+
+h1 {
+  font-size: 5rem;
+  text-shadow: 3px 2px #fff;
+  font-weight: 600;
+}
+
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
-}
-
-h1, h2 {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: normal;
-  padding: 0.5rem 0 0 0;
 }
 
 .main-controls {
@@ -53,25 +58,53 @@ canvas {
   justify-content: space-between;
 }
 
+.ml16 {
+  color: #402d2d;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 #buttons button {
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 1rem;
   width: calc(50% - 0.25rem);
 }
 
-button {
-  font-size: 1rem;
-  background: #0088cc;
+footer {
   text-align: center;
-  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  position: relative;
+  top: 500px;
+  font-family: 'Gugi', cursive;
+  color: black;
+  background-color: white;
+  opacity: 0.8;
+}
+
+footer a {}
+
+button {
+  color: black;
   border: none;
   transition: all 0.2s;
   padding: 0.5rem;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Gugi', cursive;
 }
 
 button:hover, button:focus {
   box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 1);
-  background: #0ae;
+  background: #D1804B;
 }
 
 button:active {
