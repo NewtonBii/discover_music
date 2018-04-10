@@ -5,3 +5,7 @@ This app identifies the song for you so wont have to miss the beat ever again.
 ## Resources Used
 *    [Animations and Styles](http://tobiasahlin.com/)
 *    [MDN Web Dictaphone](https://github.com/mdn/web-dictaphone)
+
+### Bugs
+
+* The website is not responsive yet.
