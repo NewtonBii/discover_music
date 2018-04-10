@@ -19,3 +19,10 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+// To display record animation
+$(document).ready(function(){
+    $(".record").click(function(){
+        $(".spinner").show();
+    });
+});
