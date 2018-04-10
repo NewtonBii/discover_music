@@ -16,7 +16,8 @@
   <div class="wrapper">
 
     <header>
-      <h1>DISCOVER THE BEAT</h1>
+      <h1 style="float:left">DISCOVER <br>THE BEAT</h1>
+      <canvas class="visualizer" height="130px"></canvas>
     </header>
     <div class="container">
       <div class="sidenav" style="background-image:url('{% static 'images/drums.jpg'%}'); background-size:cover">
@@ -25,7 +26,6 @@
       </div>
       <div class="col-lg-6">
         <section class="main-controls">
-          <canvas class="visualizer" height="180px"></canvas>
           <div id="buttons">
             <button class="record">RECORD</button>
             <button class="stop">SEARCH</button>
@@ -39,23 +39,40 @@
         </div>
       </div>
       <div class="col-lg-6 col-md-4 col-sm-1">
-        <div class="display-box">
-          <div class="spinner"></div>
+        <div class="well" style="height:40rem; margin-top:50px">
+          <div class="recording" style="display:none">
+            <div class="spinner"></div>
+            <h1 class="ml9">
+              <span class="text-wrapper">
+              <span class="letters">RECORDING</span>
+              </span>
+            </h1>
+          </div>
+
+          <div class="searching" style="display:none">
+            <div class="sk-circle">
+              <div class="sk-circle1 sk-child"></div>
+              <div class="sk-circle2 sk-child"></div>
+              <div class="sk-circle3 sk-child"></div>
+              <div class="sk-circle4 sk-child"></div>
+              <div class="sk-circle5 sk-child"></div>
+              <div class="sk-circle6 sk-child"></div>
+              <div class="sk-circle7 sk-child"></div>
+              <div class="sk-circle8 sk-child"></div>
+              <div class="sk-circle9 sk-child"></div>
+              <div class="sk-circle10 sk-child"></div>
+              <div class="sk-circle11 sk-child"></div>
+              <div class="sk-circle12 sk-child"></div>
+            </div>
+            <h1 class="ml9">
+              <span class="text-wrapper">
+              <span class="letters">DISCOVERING</span>
+              </span>
+            </h1>
+          </div>
+
         </div>
-        <div class="sk-circle">
-          <div class="sk-circle1 sk-child"></div>
-          <div class="sk-circle2 sk-child"></div>
-          <div class="sk-circle3 sk-child"></div>
-          <div class="sk-circle4 sk-child"></div>
-          <div class="sk-circle5 sk-child"></div>
-          <div class="sk-circle6 sk-child"></div>
-          <div class="sk-circle7 sk-child"></div>
-          <div class="sk-circle8 sk-child"></div>
-          <div class="sk-circle9 sk-child"></div>
-          <div class="sk-circle10 sk-child"></div>
-          <div class="sk-circle11 sk-child"></div>
-          <div class="sk-circle12 sk-child"></div>
-        </div>
+
       </div>
 
     </div>

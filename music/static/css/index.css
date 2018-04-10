@@ -43,13 +43,11 @@ h1 {
   padding-top: 20px;
 }
 
-.main-controls {
-  padding: 0.5rem 0;
-}
-
 canvas {
   display: block;
   margin-bottom: 0.5rem;
+  background-color: #D35400;
+  opacity: 0.7;
 }
 
 #buttons {
@@ -88,7 +86,6 @@ canvas {
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
-  display: none;
 }
 
 @-webkit-keyframes sk-scaleout {
@@ -119,8 +116,8 @@ canvas {
 
 .sk-circle {
   margin: 100px auto;
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
   position: relative;
 }
 
@@ -286,6 +283,33 @@ canvas {
     transform: scale(1);
   }
 }
+
+/* Letters animation */
+
+.ml9 {
+  position: relative;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Gugi', cursive;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* end of letters animation*/
 
 /* end of searching animation */
 
