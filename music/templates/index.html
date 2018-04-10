@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %}{% load bootstrap3 %}
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Web dictaphone</title>
     {% block styles %}
+    {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/index.css' %}">{% endblock%}
   </head>
   <body>
@@ -14,42 +15,34 @@
     <div class="wrapper">
 
       <header>
-        <h1>Web dictaphone</h1>
+        <h1>GET SONG</h1>
       </header>
+<div class="container">
+  <div class="sidenav">
 
-      <section class="main-controls">
-        <canvas class="visualizer" height="60px"></canvas>
-        <div id="buttons">
-          <button class="record">Record</button>
-          <button class="stop">Stop</button>
-        </div>
-      </section>
+  </div>
+  <div class="col-lg-6">
+    <section class="main-controls">
+      <canvas class="visualizer" height="180px"></canvas>
+      <div id="buttons">
+        <button class="record">RECORD</button>
+        <button class="stop">SEARCH</button>
+      </div>
+    </section>
+  </div>
+  <div class="col-lg-6 col-md-4 col-sm-1">
+    <section class="sound-clips">
 
-      <section class="sound-clips">
+
+    </section>
+  </div>
+
+</div>
 
 
-      </section>
+
 
     </div>
-
-    <label for="toggle">❔</label>
-    <input type="checkbox" id="toggle">
-    <aside>
-      <h2>Information</h2>
-
-      <p>Web dictaphone is built using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator.getUserMedia">getUserMedia</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder_API">MediaRecorder API</a>, which provides an easier way to capture Media streams.</p>
-
-      <p>Icon courtesy of <a href="http://findicons.com/search/microphone">Find Icons</a>. Thanks to <a href="http://soledadpenades.com/">Sole</a> for the Oscilloscope code!</p>
-
-      <button id="install-btn">Install app</button>
-    </aside>
-
-    <script src="scripts/install.js"></script>
-
-    <script src="scripts/mediaDevices-getUserMedia-polyfill.js"></script>
-
-    <!-- Below is your custom application script -->
-    <script src="scripts/app.js"></script>
 
   </body>
   {% block scripts %}

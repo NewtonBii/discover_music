@@ -19,6 +19,18 @@ body {
   flex-direction: column;
 }
 
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
 h1, h2 {
   font-size: 2rem;
   text-align: center;
@@ -63,14 +75,14 @@ button:hover, button:focus {
 }
 
 button:active {
-  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
   transform: translateY(2px);
 }
-
 
 /* Make the clips use as much space as possible, and
  * also show a scrollbar when there are too many clips to show
  * in the available space */
+
 .sound-clips {
   flex: 1;
   overflow: auto;
@@ -118,8 +130,8 @@ label {
 }
 
 input[type=checkbox] {
-   position: absolute;
-   top: -100px;
+  position: absolute;
+  top: -100px;
 }
 
 aside {
@@ -144,7 +156,8 @@ aside a {
 }
 
 /* Toggled State of information box */
-input[type=checkbox]:checked ~ aside {
+
+input[type=checkbox]:checked~aside {
   transform: translateX(0);
 }
 
@@ -155,6 +168,7 @@ input[type=checkbox]:checked ~ aside {
 }
 
 /* Adjustments for wider screens */
+
 @media all and (min-width: 800px) {
   /* Don't take all the space as readability is lost when line length
      goes past a certain size */
