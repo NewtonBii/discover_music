@@ -25,4 +25,7 @@ $(document).ready(function(){
     $(".record").click(function(){
         $(".spinner").show();
     });
+    $(".stop").click(function(){
+        $(".spinner").hide();
+    });
 });

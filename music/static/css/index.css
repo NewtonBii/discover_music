@@ -84,6 +84,7 @@ canvas {
   height: 40px;
   text-align: center;
   font-size: 10px;
+  display: none;
 }
 
 .spinner>div {
